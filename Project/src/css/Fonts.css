@@ -1,0 +1,36 @@
+h1 {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+    text-align: center;
+    color:rgb(204,0,0);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+    text-align: center;
+    color:rgb(204,0,0);
+} 
+
+h4 {
+    font-weight: normal;
+    font-size: 10pt;
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    
+}
+ 
+.italic {
+    font-weight: normal;
+    font-size: 10pt;
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+
+p {
+    font-weight: normal;
+    font-size: 10pt;
+    font-family: "Times New Roman";
+}
