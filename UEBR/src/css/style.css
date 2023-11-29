@@ -29,23 +29,23 @@ nav {
   width: 100%;
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6); }
-  .subheader .subheader_logo {
+  .subheader_logo {
     display: block;
     min-width: 100%;
     margin-top: 16px; }
-  .subheader .subheader_official {
+  .subheader_official {
     margin-top: 6px;
     opacity: 0.5;
     color: #FFF;
     font-size: 13px;
     font-weight: 400; }
-  .subheader .subheader_call {
+  .subheader_call {
     color: #FFF;
     font-size: 12px;
     font-weight: 300;
     margin-top: 19px;
     text-align: right; }
-  .subheader .subheader_phone {
+  .subheader_phone {
     display: block;
     margin-top: 8px;
     color: #FFF;
@@ -54,12 +54,12 @@ nav {
     font-weight: 400;
     line-height: 12px;
     text-transform: uppercase; }
-  .subheader .subheader_btn {
+  .subheader_btn {
     margin-top: 19px;
     width: 172px;
     height: 46px;
     border-radius: 4px;
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
     box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.12) inset;
     color: #FFF;
     text-align: center;
@@ -67,12 +67,15 @@ nav {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase; }
+    .subheader_btn:hover {
+      background-image: none;
+      background-color: #1EACC7; }
 
 .promo {
   min-height: 800px;
   background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
   padding: 150px 0 135px 0; }
-  .promo .promo_header {
+  .promo_header {
     color: #FFF;
     margin: 0;
     text-align: center;
@@ -80,7 +83,7 @@ nav {
     line-height: 60px;
     font-weight: 900;
     text-transform: uppercase; }
-  .promo .promo_subheader {
+  .promo_subheader {
     color: #FFF;
     margin: 22px auto 0;
     text-align: center;
@@ -88,20 +91,20 @@ nav {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase; }
-  .promo .promo_desc {
+  .promo_desc {
     color: #FFF;
     margin-top: 23px;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px; }
-  .promo .promo_btn {
+  .promo_btn {
     display: block;
     margin: 118px auto 0 auto;
     width: 259px;
     height: 63px;
     border-radius: 4px;
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
     box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.12) inset;
     color: #FFF;
     text-align: center;
@@ -109,17 +112,20 @@ nav {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase; }
+    .promo_btn:hover {
+      background-image: none;
+      background-color: #1EACC7; }
 
 .reason {
   min-height: 850px;
-  background-color: #fff;
+  background-color: #FFF;
   padding: 20px 0 64px 0; }
-  .reason .reason_block {
+  .reason_block {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 35px; }
-  .reason .reason_round {
+  .reason_round {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,14 +134,14 @@ nav {
     height: 116px;
     background-color: #1EACC7;
     border-radius: 50%; }
-  .reason .reason_desc {
+  .reason_desc {
     width: 343px; }
-  .reason .reason_subtext {
+  .reason_subtext {
     color: #1EACC7;
     font-size: 17px;
     font-weight: 400;
     line-height: 21px; }
-  .reason .reason_text {
+  .reason_text {
     color: #202020;
     font-size: 15px;
     font-weight: 300;
@@ -210,4 +216,101 @@ nav {
     background-color: #000;
     margin: 0 auto;
     border-radius: 50%;
-    padding: 6px; }
+    cursor: pointer; }
+    .mobile_btn:before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 2px;
+      background-color: #1EACC7;
+      transition: 0.5s all; }
+    .mobile_btn:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 2px;
+      height: 14px;
+      background-color: #1EACC7;
+      transition: 0.5s all; }
+    .mobile_btn:hover:after, .mobile_btn:hover:before {
+      background-color: #FF5656; }
+
+.auto {
+  padding: 59px 0 138px 0;
+  position: relative;
+  min-height: 900px;
+  background: url(../img/bg/mobile_app.png) center center/cover no-repeat; }
+  .auto_bgdark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background-color: #070716;
+    z-index: 0; }
+  .auto .label {
+    position: relative;
+    background-color: #FFF;
+    color: #222;
+    z-index: 1; }
+  .auto .title {
+    position: relative;
+    color: #FFF;
+    z-index: 1; }
+  .auto .subtitle {
+    position: relative;
+    color: #FFF;
+    z-index: 1; }
+  .auto_car {
+    position: relative;
+    z-index: 1;
+    margin-top: 54px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .auto_text {
+    color: #222;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px; }
+
+.require {
+  padding: 68px 0 84px 0; }
+  .require_block {
+    margin: 33px 0; }
+    .require_block_nmb {
+      margin-bottom: 0; }
+  .require_title {
+    color: #1EACC7;
+    font-size: 22px;
+    font-weight: 400; }
+  .require_desc {
+    color: #1EACC7;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 25px; }
+  .require_list {
+    margin-top: 22px;
+    list-style-type: none;
+    padding-left: 50px; }
+    .require_list li {
+      position: relative;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 10px; }
+      .require_list li:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -32px;
+        top: 3px;
+        width: 21px;
+        height: 20px;
+        background: url("../icons/check_blue.svg") center center/cover no-repeat; }
+  .require .warning .require_title {
+    color: #FF5656; }
+  .require .warning .require_list li:before {
+    background: url("../icons/check_red.svg") center center/cover no-repeat; }
