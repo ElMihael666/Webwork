@@ -8,6 +8,10 @@ nav {
   z-index: 1;
   height: 50px;
   background-color: #212121;
+
+}
+.burger {
+  display: none;
 }
 .menu {
   display: flex;
@@ -76,6 +80,7 @@ nav {
     text-transform: uppercase;
     @include btn_hover
   }
+
 }
 .promo {
   min-height: 800px;
@@ -298,7 +303,8 @@ nav {
   }
   &_car {
     position: relative;
-    z-index: 1;
+    width: 100%;
+    z-index: 0;
     margin-top: 54px;
     left: 50%;
     transform: translateX(-50%);
@@ -474,4 +480,7 @@ footer {
       text-align: center;
     }
   }
+}
+.xs-visible {
+  display: none;
 }
