@@ -252,5 +252,22 @@
       font-size: 16px;
     }
   }
-
+  .auto {
+    min-height: 393px;
+    padding: 27px 0 31px 0;
+    background: #070716 center center/cover no-repeat;
+    .title {
+      display: none;
+    }
+    .subtitle{
+      display: none;
+    }
+    &_bgdark {
+      display: none;
+    }
+    &_text {
+      color: #FFF;
+      font-size: 17px;
+    }
+  }
 }

@@ -584,4 +584,17 @@ footer {
   .mobile {
     padding: 28px 0 43px 0; }
     .mobile .title {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .auto {
+    min-height: 393px;
+    padding: 27px 0 31px 0;
+    background: #070716 center center/cover no-repeat; }
+    .auto .title {
+      display: none; }
+    .auto .subtitle {
+      display: none; }
+    .auto_bgdark {
+      display: none; }
+    .auto_text {
+      color: #FFF;
+      font-size: 17px; } }
