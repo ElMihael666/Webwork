@@ -581,5 +581,7 @@ footer {
     margin: 0; }
   .reason_desc {
     width: 100%; }
-  .mobile .title {
-    font-size: 16px; } }
+  .mobile {
+    padding: 28px 0 43px 0; }
+    .mobile .title {
+      font-size: 16px; } }
