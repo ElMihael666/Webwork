@@ -289,17 +289,17 @@ nav {
     position: relative;
     background-color: $txt_clr_white;
     color: $txt_clr_black;
-    z-index: 1;
+    z-index: 0;
   }
   .title {
     position: relative;
     color: $txt_clr_white;
-    z-index: 1;
+    z-index: 0;
   }
   .subtitle{
     position: relative;
     color: $txt_clr_white;
-    z-index: 1;
+    z-index: 0;
   }
   &_car {
     position: relative;

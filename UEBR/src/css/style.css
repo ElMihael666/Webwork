@@ -261,15 +261,15 @@ nav {
     position: relative;
     background-color: #FFF;
     color: #222;
-    z-index: 1; }
+    z-index: 0; }
   .auto .title {
     position: relative;
     color: #FFF;
-    z-index: 1; }
+    z-index: 0; }
   .auto .subtitle {
     position: relative;
     color: #FFF;
-    z-index: 1; }
+    z-index: 0; }
   .auto_car {
     position: relative;
     width: 100%;
