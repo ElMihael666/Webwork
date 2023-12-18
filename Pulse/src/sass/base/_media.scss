@@ -129,6 +129,14 @@
       padding: 30px 0 0 0;
     }
   }
+  .overlay {
+    .modal {
+      &__close {
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
@@ -187,6 +195,14 @@
     }
     &__addr {
       font-size: 17px;
+    }
+  }
+  .overlay {
+    .modal {
+      &__close {
+        top: 10px;
+        right: 40px;
+      }
     }
   }
 }
