@@ -30,11 +30,11 @@
   }
   .skills {
     &__items {
-      grid-template-columns: repeat(3,270px);
+      grid-template-columns: repeat(auto-fit,270px);
       justify-content: center;
     }
     &__ratings {
-      grid-template: repeat(3,minmax(70px,auto))/repeat(2,350px);
+      grid-template: repeat(3,minmax(70px,auto))/repeat(auto-fit,350px);
       justify-content: space-around;
     }
   }
@@ -46,17 +46,33 @@
     &__item {
       filter: none;
     }
-    .vertical {
-      grid-column: auto;
-      grid-row: auto;
-    }
-    .horizontal {
+    .vertical, .horizontal {
       grid-column: auto;
       grid-row: auto;
     }
   }
   .price {
     justify-content: space-around;
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: auto;
+    }
+    &__photo {
+      display: none;
+    }
+    &__forms {
+      grid-template: 45px 45px 190px 45px/repeat(auto-fit,280px);
+      .name {
+        grid-row: 1;
+      }
+      .email {
+        grid-row: 2;
+      }
+    }
+    &__textarea {
+      grid-row: 3;
+    }
   }
 }
 
@@ -90,11 +106,7 @@
     }
   }
   .skills {
-    &__items {
-      grid-template-columns: repeat(2,270px);
-    }
     &__ratings {
-      grid-template: repeat(6,minmax(70px,auto))/ 530px;
       padding-top: 60px;
     }
   }
@@ -183,6 +195,23 @@
       grid-template-columns: 450px;
     }
   }
+  .contacts {
+    padding: 60px 0 90px 0;
+    &__textarea {
+      grid-column: unset;
+    }
+    &__triggers {
+      row-gap: 35px;
+      grid-column: unset;
+    }
+    &__btn {
+      grid-row: 2;
+      grid-column: 1/3;
+    }
+    &__policy {
+      width: 122%;
+    }
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -247,9 +276,6 @@
     }
   }
   .skills {
-    &__items {
-      grid-template-columns: 270px;
-    }
     &__ratings {
       grid-template: repeat(6,minmax(70px,auto))/280px;
     }
@@ -262,6 +288,15 @@
   .price {
     &__wrapper {
       grid-template-columns: 250px;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      padding: 0 0 0 10px;
+      justify-content: center;
+    }
+    &__policy {
+      width: 100%;
     }
   }
 }
